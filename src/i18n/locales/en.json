@@ -1,0 +1,46 @@
+{
+  "industrySection": {
+    "title": "Industries We Serve",
+    "filtration": {
+      "title": "Filtration Industry",
+      "description": "Our scrim fabrics are specifically engineered for filtration applications, providing superior performance in various industrial settings.",
+      "properties": "• High porosity and excellent air permeability\n• Stable chemical resistance for long-term durability",
+      "applications": "• Scrim fabrics used in filter bags, filter presses, vacuum belt filters, and dust collection systems\n• Provides essential protection to equipment, personnel, and the work environment"
+    },
+    "marine": {
+      "title": "Marine Industry",
+      "description": "Our specialized scrim fabrics are designed to meet the demanding requirements of marine applications, ensuring reliable performance in challenging maritime conditions.",
+      "properties": "• Excellent saltwater resistance and UV stability\n• Engineered for long-lasting durability in harsh marine environments",
+      "applications": "• Specialized scrim fabrics used for marine battery covers and protective marine gear\n• Provides reliable protection in marine applications"
+    }
+  },
+  "products": {
+    "title": "Our Products",
+    "intro": {
+      "title": "High-Quality Industrial Fabrics",
+      "description": "At MGM Textiles, we produce high-quality industrial fabrics — designed for high-performance applications across multiple industries.",
+      "scrim": "We specialise in producing Scrim fabric which is a lightweight, open-weave technical fabric used to provide reinforcement, stability, and durability in various industrial applications. It acts as a structural layer in composite materials, filtration media, non-woven textiles, and more.",
+      "industries": "Industries using scrim fabric include cement manufacturing, automotive, filtration, marine and footwear sectors where enhanced strength and resilience are critical.",
+      "nonwoven": "Our scrim fabrics are essential in non-woven textiles, offering superior strength, durability, and reliability."
+    },
+    "range": {
+      "title": "Our Product Range",
+      "polyesterMultifilament": {
+        "title": "Polyester Multifilament Scrim",
+        "features": "• Designed for non-woven needle felt applications\n• Enhances fabric durability and performance\n• Ideal for high-stress industrial uses"
+      },
+      "spunPolyester": {
+        "title": "Spun Polyester Scrim",
+        "features": "• Needle-felt non-woven scrim fabric\n• Offers high strength and structural support\n• Used in filtration, automotive interiors, and construction composites"
+      },
+      "strobel": {
+        "title": "Strobel Scrim Fabric",
+        "features": "• Specialized scrim fabric used as shoe lining in Strobel stitching applications\n• Provides flexibility and reinforcement for footwear"
+      },
+      "hose": {
+        "title": "Hose Fabric",
+        "features": "• Reinforcement fabric for industrial hoses\n• Designed for high pressure and heavy-duty applications"
+      }
+    }
+  }
+} 
