@@ -51,7 +51,7 @@ const Home: React.FC = () => {
       src: '/images/WhatsApp Image 2025-04-30 at 5.00.21 PM (1).jpeg',
       alt: 'Weaving Excellence',
       aspectRatio: '16/9',
-      description: 'Using latest technology machines and modern techniques, we produce high-performance \n fabrics that meet the demanding industrial standards.',
+      description: 'Using latest technology machines and modern techniques, we produce \n high-performance fabrics that meet the demanding industrial standards.',
     },
     {
       src: '/images/WhatsApp Image 2025-04-30 at 5.00.21 PM.jpeg',
@@ -352,13 +352,13 @@ const Home: React.FC = () => {
               About Us
             </Typography>
             <Typography variant="body1" paragraph>
-            Established in 2002, MGM Textiles is an ISO 9001 : 2015 certified company based in Sarigam, Gujarat. We are a trusted name in the manufacturing of high-performance industrial fabrics tailored for technical and industrial applications. With a strong foundation in quality and innovation, we specialize in producing scrim fabric, strobble fabric, reinforcement fabric, and hose fabric — essential components across industries like automotive, cement, chemical, filtration, marine, footwear, aviation, and sports.
+            Established in 2002, MGM Textiles is an ISO 9001 : 2015 certified company based in Sarigam, Gujarat. We are a trusted name in the manufacturing of high-performance industrial fabrics tailored for technical and industrial applications. With a strong foundation in quality and innovation, we specialize in producing scrim fabric, reinforcement fabric, hose fabric and strobel fabric — essential components across industries like filtration, automotive, cement, marine, chemical, footwear, aviation and sports.
             </Typography>
             <Typography variant="body1" paragraph>
             At MGM Textiles, we combine decades of industry experience with cutting-edge technology and advanced weaving techniques to deliver fabrics that meet the highest standards of durability, strength, and reliability. Our state-of-the-art facility is equipped with modern rapier looms and precision-driven processes to ensure consistency and excellence in every roll we produce.
             </Typography>
             <Typography variant="body1" paragraph>
-            Beyond manufacturing, we also provide customized job-work services to support our clients’ unique requirements. Whether you’re seeking reinforcement solutions or high-performance non-woven fabrics, MGM Textiles is committed to delivering value, precision, and long-term partnership in every thread.            </Typography>
+            Beyond manufacturing, we also provide customized job-work services to support our clients’ unique requirements. Whether you’re seeking reinforcement solutions or high-performance woven fabrics, MGM Textiles is committed to delivering value, precision and long-term partnership in every thread.            </Typography>
           
           </Paper>
         </Grid>
@@ -565,12 +565,14 @@ const Home: React.FC = () => {
       </Container>
 
       {/* Services Section */}
-      <Container maxWidth="lg" sx={{ mb: 5,mt:5  }}>
+      <Container maxWidth="lg" sx={{ mb: 5, mt: 5 }}>
         <Typography variant="h3" component="h2" gutterBottom align="center" sx={{ mb: 4, color: '#1A3C40', fontWeight: 'bold' }}>
           {t('serviceSection.title')}
         </Typography>
+        
+        {/* Desktop View */}
         <Box sx={{ 
-          display: 'flex', 
+          display: { xs: 'none', md: 'flex' },
           justifyContent: 'center', 
           gap: 2,
           flexWrap: 'nowrap',
@@ -653,6 +655,124 @@ const Home: React.FC = () => {
               </CardContent>
             </Card>
           ))}
+        </Box>
+
+        {/* Mobile View with Slider */}
+        <Box sx={{ 
+          display: { xs: 'block', md: 'none' },
+          '& .slick-slider': {
+            borderRadius: '20px',
+            overflow: 'hidden',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
+          },
+          '& .slick-list': {
+            borderRadius: '20px',
+          },
+          '& .slick-track': {
+            borderRadius: '20px',
+          },
+          '& .custom-dots': {
+            bottom: '-30px !important',
+          }
+        }}>
+          <Slider
+            dots={true}
+            infinite={true}
+            speed={700}
+            slidesToShow={1}
+            slidesToScroll={1}
+            autoplay={true}
+            autoplaySpeed={4000}
+            customPaging={() => (
+              <div
+                style={{
+                  width: '12px',
+                  height: '12px',
+                  backgroundColor: '#D6A77A',
+                  borderRadius: '50%',
+                  margin: '0 8px',
+                  opacity: 0.4,
+                  transition: 'all 0.3s ease',
+                  border: '2px solid #D6A77A',
+                }}
+              />
+            )}
+            dotsClass="slick-dots custom-dots"
+          >
+            {services.map((service, index) => (
+              <Box key={index} sx={{ px: 2 }}>
+                <Card sx={{ 
+                  height: '100%',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  borderRadius: '15px',
+                  boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
+                  transition: 'transform 0.3s',
+                  '&:hover': {
+                    transform: 'translateY(-5px)'
+                  }
+                }}>
+                  <Box sx={{ position: 'relative', height: '200px' }}>
+                    <Slider
+                      dots={false}
+                      infinite={true}
+                      speed={500}
+                      slidesToShow={1}
+                      slidesToScroll={1}
+                      autoplay={true}
+                      autoplaySpeed={3000}
+                    >
+                      <CardMedia
+                        component="img"
+                        height="200"
+                        image={service.image}
+                        alt={service.title}
+                        sx={{
+                          objectFit: 'cover',
+                          imageRendering: 'crisp-edges',
+                          height: '200px'
+                        }}
+                      />
+                      <CardMedia 
+                        component="img"
+                        height="200"
+                        image={`${service.image2}`}
+                        alt={`${service.title} 2`}
+                        sx={{
+                          objectFit: 'cover',
+                          imageRendering: 'crisp-edges', 
+                          height: '200px'
+                        }}
+                      />
+                    </Slider>
+                  </Box>
+                  <CardContent sx={{ 
+                    p: 3,
+                    flexGrow: 1,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-between'
+                  }}>
+                    <Typography gutterBottom variant="h5" component="h3" sx={{ 
+                      color: '#1A3C40', 
+                      fontWeight: 'bold',
+                      mb: 2,
+                      textAlign: 'center'
+                    }}>
+                      {service.title}
+                    </Typography>
+                    <Typography variant="body1" sx={{ 
+                      color: '#666',
+                      lineHeight: 1.6,
+                      textAlign: 'center'
+                    }}>
+                      {service.description}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Box>
+            ))}
+          </Slider>
         </Box>
       </Container>
 
@@ -758,12 +878,25 @@ const Home: React.FC = () => {
           {/* Automotive & Marine Industry */}
           <Box sx={{ 
             display: 'flex', 
-            flexDirection: { xs: 'column', md: 'row' },
+            flexDirection: { xs: 'column-reverse', md: 'row' },
             alignItems: 'center',
             gap: 4,
             mb: 6
+          
           }}>
-           
+              <Box sx={{ 
+              flex: 1,
+              '& img': {
+                width: '100%',
+                height: '300px',
+                objectFit: 'cover',
+                borderRadius: '15px',
+                boxShadow: '0 4px 20px rgba(0,0,0,0.1)'
+              }
+            }}>
+              <img src="/images/WhatsApp Image 2025-04-30 at 5.02.50 PM.jpeg" alt="Automotive Industry" />
+            </Box>
+            
             <Box sx={{ flex: 1 }}>
               <Typography variant="h4" component="h3" sx={{ color: '#1A3C40', fontWeight: 'bold', mb: 2 }}>
                 {t('industrySection.automotive.title')}
@@ -778,18 +911,7 @@ const Home: React.FC = () => {
                 {t('industrySection.automotive.applications')}
               </Typography>
             </Box>
-            <Box sx={{ 
-              flex: 1,
-              '& img': {
-                width: '100%',
-                height: '300px',
-                objectFit: 'cover',
-                borderRadius: '15px',
-                boxShadow: '0 4px 20px rgba(0,0,0,0.1)'
-              }
-            }}>
-              <img src="/images/WhatsApp Image 2025-04-30 at 5.02.50 PM.jpeg" alt="Automotive Industry" />
-            </Box>
+        
           </Box>
 
           {/* Marine Industry */}

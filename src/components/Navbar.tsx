@@ -85,16 +85,25 @@ const Navbar: React.FC<NavbarProps> = ({ toggleTheme, isDarkMode }) => {
       <Toolbar sx={{ justifyContent: 'space-between' }}>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
           <Link to="/" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center' }}>
-
+          <img
+                src={isDarkMode ? "/images/logo3.png" : "/images/wowenlogo.png"}
+                alt="MGM Textiles Logo"
+                style={{
+                  height: isMobile ? '26px' : '40px',
+                  width:isMobile?'45px':'60px',
+                  //marginRight:'20px',
+                  objectFit: 'contain',
+                  display: 'block',
+                }}
+              />
             <Box
               sx={{
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'flex-start',
-                px: { xs: 1, sm: 2 }, // horizontal padding
                 py: { xs: 0.2, sm: 0.2}, // vertical padding
                 m: { xs: 0, sm: 1 }, // margin around the box
-                gap: 0.2, // space between children
+                gap: 0.1, // space between children
               }}
             >
               <Typography
@@ -112,17 +121,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggleTheme, isDarkMode }) => {
               >
                 MGM TEXTILES
               </Typography>
-              <img
-                src={isDarkMode ? "/images/logo3.png" : "/images/logo2.png"}
-                alt="MGM Textiles Logo"
-                style={{
-                  height: isMobile ? '26px' : '31px',
-                  width:isMobile?'115px':'212px',
-                  //marginRight:'20px',
-                  objectFit: 'contain',
-                  display: 'block',
-                }}
-              />
+              
             </Box>
           </Link>
         </Box>

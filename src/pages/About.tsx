@@ -21,7 +21,7 @@ const About: React.FC = () => {
               Our Story
             </Typography>
             <Typography variant="body1" paragraph>
-            The first thread in our textile journey was woven two decades ago—born from the dream of our late grand father, Shri Jagdish Kumar Malhotra, the founder of MGM Textiles. What began as his vision of yarns and fabrics has grown into a legacy—one we are proud to inherit and carry forward with passion and purpose. MGM Textiles stands today as a testament to his foresight, craftsmanship, and belief in building something that endures through generations
+            The first thread in our textile journey was woven two decades ago—born from the dream of our late grandfather, Shri Jagdish Kumar Malhotra, the founder of MGM Textiles. What began as his vision of yarns and fabrics has grown into a legacy—one we are proud to inherit and carry forward with passion and purpose. MGM Textiles stands today as a testament to his foresight, craftsmanship and belief in building something that endures through generations
             </Typography>
           </Paper>
         </Grid>
@@ -31,13 +31,13 @@ const About: React.FC = () => {
               About Us
             </Typography>
             <Typography variant="body1" paragraph>
-            Established in 2002, MGM Textiles is an ISO 9001 : 2015 certified company based in Sarigam, Gujarat. We are a trusted name in the manufacturing of high-performance industrial fabrics tailored for technical and industrial applications. With a strong foundation in quality and innovation, we specialize in producing scrim fabric, strobble fabric, reinforcement fabric, and hose fabric — essential components across industries like automotive, cement, chemical, filtration, marine, footwear, aviation, and sports.
+            Established in 2002, MGM Textiles is an ISO 9001 : 2015 certified company based in Sarigam, Gujarat. We are a trusted name in the manufacturing of high-performance industrial fabrics tailored for technical and industrial applications. With a strong foundation in quality and innovation,  we specialize in producing scrim fabric, reinforcement fabric, hose fabric and strobel fabric — essential components across industries like filtration, automotive, cement, marine, chemical, footwear, aviation and sports.
             </Typography>
             <Typography variant="body1" paragraph>
             At MGM Textiles, we combine decades of industry experience with cutting-edge technology and advanced weaving techniques to deliver fabrics that meet the highest standards of durability, strength, and reliability. Our state-of-the-art facility is equipped with modern rapier looms and precision-driven processes to ensure consistency and excellence in every roll we produce.
             </Typography>
             <Typography variant="body1" paragraph>
-            Beyond manufacturing, we also provide customized job-work services to support our clients’ unique requirements. Whether you’re seeking reinforcement solutions or high-performance non-woven fabrics, MGM Textiles is committed to delivering value, precision, and long-term partnership in every thread.            </Typography>
+            Beyond manufacturing, we also provide customized job-work services to support our clients’ unique requirements. Whether you’re seeking reinforcement solutions or high-performance woven fabrics, MGM Textiles is committed to delivering value, precision, and long-term partnership in every thread.            </Typography>
           
           </Paper>
         </Grid>
@@ -61,10 +61,10 @@ const About: React.FC = () => {
               <Typography component="li" variant="body1" paragraph>
               Offer flexible manufacturing, job work, and end-to-end service models to serve diverse industrial needs.              </Typography>
               <Typography component="li" variant="body1" paragraph>
-                Ensuring sustainable and Build long-term partnerships based on trust, reliability, and customer satisfaction. responsible manufacturing practices
+              Build long-term partnerships based on trust, reliability, and customer satisfaction.
               </Typography>
               <Typography component="li" variant="body1" paragraph>
-              Contribute to the growth of India’s technical textiles industry through sustainable and responsible practices.              </Typography>
+              Contribute to the growth of India’s technical textiles industry through sustainable and responsible manufacturing practices.             </Typography>
             
             </Box>
           </Paper>
@@ -81,7 +81,7 @@ const About: React.FC = () => {
                   Quality Assurance
                 </Typography> */}
                 <Typography variant="body1">
-                To become India’s leading manufacturer and trusted partner in industrial/technical textiles by delivering innovative, high-performance fabric solutions that drive progress across filtration, automotive, cement, marine, and technical sectors — with quality, precision, and integrity at the core of everything we do.
+                To become India’s leading manufacturer and trusted partner in industrial/technical textiles by delivering innovative, high-performance fabric solutions that drive progress across filtration, automotive, cement, marine, and technical sectors — with quality, precision and integrity at the core of everything we do.
                 </Typography>
               </Grid>
               {/* <Grid item xs={12} md={4}>

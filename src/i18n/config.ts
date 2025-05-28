@@ -13,8 +13,8 @@ const resources = {
         "intro": {
           "title": "High-Quality Industrial Fabrics",
           "description": "At MGM Textiles, we produce high-quality industrial fabrics — designed for high-performance applications across multiple industries.",
-          "scrim": "Scrim fabric is a lightweight, open-weave reinforcement fabric made from polyester spun, filament, fiberglass, or synthetic fibers. It is engineered for strength, dimensional stability, and resistance to heat, chemicals, and abrasion.",
-          "industries": "Used as a structural support layer, scrim enhances durability in composite materials, filter systems, coated fabrics, insulation products, and more — making it a critical component across heavy industries like filtration, cement, automotive, and marine.",
+          "scrim": "Scrim fabric is a lightweight, open-weave reinforcement fabric made from polyester spun, filament, fiberglass or synthetic fibers. It is engineered to provide strength, dimensional stability and resistance to heat, chemicals & abrasion.",
+          "industries": " Used as a structural support layer, scrim fabric enhances durability in composite materials, filter systems, coated fabrics, insulation products and more — making it a critical component across heavy industries like filtration, cement, automotive and marine.",
           "nonwoven": ""
         },
         "range": {
@@ -29,7 +29,7 @@ const resources = {
           },
           "strobel": {
             "title": "Strobel Scrim Fabric",
-            "features": "• Specialized light weight scrim fabric used as shoe lining in footwear industry\n• Provides flexibility and comfort"
+            "features": "• Specialized light weight scrim fabric used in shoe lining in the footwear industry\n• Provides support, comfort and helps maintain shape."
           },
           "hose": {
             "title": "Hose Fabric",
@@ -99,8 +99,8 @@ const resources = {
         title: 'Industries We Serve',
         automotive: {
           title: 'Automotive',
-          description: '•	Supports technical textiles used in seat belts, airbags, and insulation systems.\n',
-          properties: '•	Offers high durability, flexibility, and form stability in automotive components.\n',
+          description: '•	Used as a backing material for car seats, carpet, upholstery and door panels providing strength and preventing deformation\n',
+          properties: '•	Offers high durability, flexibility and form stability in automotive components.\n',
           applications: ''
         },
           filtration: {
@@ -117,9 +117,9 @@ const resources = {
         },
         marine:{
           "title": "Marine",
-          "description": "•	Used in marine battery covers and insulation materials.\n",
-          "properties": "•	Withstands harsh conditions: saltwater, heat, vibration, and chemical exposure.\n",
-          "applications": "•	Ensures reinforcement, shape retention, and safety in demanding marine environments."
+          "description": "•	Used as reinforcement in marine batteries to enhance the overall performance and lifespan of the battery system\n",
+          "properties": "•	Withstands harsh conditions: saltwater, heat, vibration and chemical exposure.\n",
+          "applications": "• Provides structural support, durability and protection in demanding marine environments"
         }      
       },
       footer: {

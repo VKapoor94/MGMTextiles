@@ -140,19 +140,19 @@ const Industries: React.FC = () => {
             alignItems: 'center',
             gap: 4,
             mb: 6
+          }}> <Box sx={{ 
+            flex: 1,
+            '& img': {
+              width: '100%',
+              height: '300px',
+              objectFit: 'cover',
+              borderRadius: '15px',
+              boxShadow: '0 4px 20px rgba(0,0,0,0.1)'
+            }
           }}>
-            <Box sx={{ 
-              flex: 1,
-              '& img': {
-                width: '100%',
-                height: '300px',
-                objectFit: 'cover',
-                borderRadius: '15px',
-                boxShadow: '0 4px 20px rgba(0,0,0,0.1)'
-              }
-            }}>
-              <img src="/images/WhatsApp Image 2025-04-30 at 5.02.50 PM.jpeg" alt="Automotive Industry" />
-            </Box>
+            <img src="/images/WhatsApp Image 2025-04-30 at 5.02.50 PM.jpeg" alt="Automotive Industry" />
+          </Box>
+            
             <Box sx={{ flex: 1 }}>
               <Typography variant="h4" component="h3" sx={{ color: '#1A3C40', fontWeight: 'bold', mb: 2 }}>
                 {t('industrySection.automotive.title')}
@@ -167,6 +167,7 @@ const Industries: React.FC = () => {
                 {t('industrySection.automotive.applications')}
               </Typography>
             </Box>
+           
           </Box>
 
           {/* Marine Industry */}

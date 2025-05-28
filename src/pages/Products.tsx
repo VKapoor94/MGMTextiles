@@ -340,7 +340,7 @@ const Products: React.FC = () => {
                       whiteSpace: 'pre-line'
                     }}
                   >
-                    • Boosts collision resistance and pressure durability for longer service life and reduced wear.
+                    • Boosts collision resistance and pressure durability for longer service life as well as reduced wear & tear.
                   </Typography>
                 </CardContent>
               </Card>
@@ -370,7 +370,7 @@ const Products: React.FC = () => {
                       whiteSpace: 'pre-line'
                     }}
                   >
-                    • Tailor-made industrial fabrics to meet your specific technical and industrial requirements.
+                    • Tailor-made fabrics to meet your specific technical and industrial requirements.
                   </Typography>
                 </CardContent>
               </Card>
